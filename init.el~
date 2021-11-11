@@ -1,0 +1,7 @@
+(setq package-file (expand-file-name "package.el" user-emacs-directory))
+(load package-file)
+(setq mode-file (expand-file-name "mode.el" user-emacs-directory))
+(load mode-file)
+(setq custom-file (expand-file-name "custom.el" user-emacs-directory))
+(load custom-file)
+
