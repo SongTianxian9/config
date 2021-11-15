@@ -1,5 +1,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;BASIC
+(setq inhibit-startup-screen 1)
 (setq display-line-numbers-type 'relative)
+
 
 ;; for SICP-Berkeley
 (setq scheme-program-name "stk-simply")

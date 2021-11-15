@@ -7,9 +7,13 @@
 ;;              '("melpa" . "https://elpa.zilongshanren.com/melpa/"))
 ;; 	     ;'("org"   . "https://elpa.zilongshanren.com/org/")
 (package-initialize)
-;;(package-refresh-contents)
+;(package-refresh-contents)
 
 ;; Download Evil
 (unless (package-installed-p 'evil)
   (package-install 'evil))
 (require 'evil)
+
+(unless (package-installed-p 'tldr)
+  (package-install 'tldr))
+(require 'tldr)
