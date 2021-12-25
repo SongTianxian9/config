@@ -7,7 +7,7 @@
 ;;              '("melpa" . "https://elpa.zilongshanren.com/melpa/"))
 ;; 	     ;'("org"   . "https://elpa.zilongshanren.com/org/")
 (package-initialize)
-;(package-refresh-contents)
+; (package-refresh-contents)
 
 ;; Download Evil
 (unless (package-installed-p 'evil)
@@ -17,3 +17,10 @@
 (unless (package-installed-p 'tldr)
   (package-install 'tldr))
 (require 'tldr)
+
+;; Add it to load path
+(add-to-list 'load-path "~/.emacs.d/netease")
+
+;; Require it
+(require 'netease-cloud-music)
+(require 'netease-cloud-music-ui)
